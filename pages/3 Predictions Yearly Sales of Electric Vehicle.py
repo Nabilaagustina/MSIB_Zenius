@@ -136,10 +136,4 @@ df_year = predict_sales.groupby('Year').agg({'Prediction Sales':sum}).reset_inde
 st.line_chart(df_year, x="Year", y="Prediction Sales")
 
 st.markdown("<h5>Evaluate model:</h5>", unsafe_allow_html=True)
-st.markdown("""<ol>
-                    <li>MAPE: 23.379229391881804</li>
-                    <li>MAE:4447.140498494322</li>
-                    <li>MSE: 30940440.10590139</li>
-                    <li>R-squared: 0.9199664062322683</li>
-                </ol>""", 
-            unsafe_allow_html=True)
+st.markdown("""R-squared: 0.9199664062322683""", unsafe_allow_html=True)
